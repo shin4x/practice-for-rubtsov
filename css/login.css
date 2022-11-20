@@ -1,0 +1,95 @@
+.login {
+    position: relative;
+    min-height: fit-content;
+    width: 405px;
+    margin: auto;
+    padding: 60px 60px;
+    background: #222;
+    box-shadow: 0px 30px 60px -5px #000;
+  }
+  form {
+    padding-top: 60px;
+  }
+  .active {
+  color: whitesmoke;
+    border-bottom: 2px solid #F34213;
+  }
+  .top_button_container{
+    display: flex;
+    justify-content: space-around;
+  }
+  .active:hover{
+    background: #F34213;
+    box-shadow: 0px 4px 35px -5px #4082f5;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  h2 {
+    padding-left: 12px;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 100;
+  }
+  h2:first-child {
+    padding-left: 0px;
+  }
+
+  .text {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0);
+    margin-top: 15px;
+    transition: all 0.5s ease-in-out;
+  }
+  .text:hover{
+    background: #F34213;
+    box-shadow: 0px 4px 35px -5px #4082f5;
+    cursor: pointer;
+  }
+  input {
+    color: #fff;
+    padding: 7px;
+  }
+  label {
+    display: inline-block;
+    padding-top: 10px;
+  }
+  .sign {
+    background-color: #F34213;
+    color: #FFF;
+    width: 100%;
+    padding: 10px 20px;
+    display: block;
+    height: 39px;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    text-transform: uppercase;
+  }
+  .sign:hover {
+    background: #F34213;
+    box-shadow: 0px 4px 35px -5px #4082f5;
+    cursor: pointer;
+  }
+  hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    top: 85px;
+    position: relative;
+  }
+  .forgot>a {
+    text-align: center;
+    display: block;
+    top: 120px;
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.2);
+  }
+  .keep{
+    color: white;
+  }

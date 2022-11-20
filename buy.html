@@ -1,0 +1,194 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+    <!-- Заголовок страницы в браузере -->
+    <title>GRID LAYOUT - Практика</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Кодировка страницы -->
+    <meta charset="UTF-8">
+    <!-- Адаптив -->
+    <meta name="viewport" content="width=device-width">
+</head>
+<!-- Отображаемое тело страницы -->
+
+<body>
+    <!-- Оболочка (grid-контейнер) -->
+    <div class="wrapper">
+        <!-- Шапка (grid - элемент) -->
+        <header class="header">
+            <a href="" class="header__logo"><img src="img/logo.png" alt="" width="70px" height="70px"></a>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li><a href="index.html" class="header__link">Главная</a></li>
+                    <li><a href="dostavka.html" class="header__link">Информация о доставке</a></li>
+                    <li><a href="review.html" class="header__link">Отзывы</a></li>
+                    <li><a href="news.html" class="header__link">Новости </a></li>
+                    <li><a href="signin.html" class="header__link">Войти</a></li>
+
+                </ul>
+            </nav>
+        </header><!-- Сайдбар (grid-элемент) -->
+        <aside class="sidebar">
+            <nav class="sidebar__menu">
+                <ul class="sidebar__list">
+                    <div class="dropdown link">
+                        <li>
+                            <button onclick="myFunction1()" class="dropbtn link">Для мужчин</button>
+                            <div id="myDropdown1" class="dropdown-content">
+                                <a href="#">Дэмисезон</a>
+                                <a href="#">Лето</a>
+                                <a href="#">Зима</a>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="dropdown link">
+                        <li>
+                            <button onclick="myFunction2()" class="dropbtn link">Для женщин</button>
+                            <div id="myDropdown2" class="dropdown-content">
+                                <a href="#">Дэмисезон</a>
+                                <a href="#">Лето</a>
+                                <a href="#">Зима</a>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="dropdown link">
+                        <li>
+                            <button onclick="myFunction3()" class="dropbtn link">Для детей</button>
+                            <div id="myDropdown3" class="dropdown-content">
+                                <a href="#">Дэмисезон</a>
+                                <a href="#">Лето</a>
+                                <a href="#">Зима</a>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="dropdown link">
+                        <li>
+                            <button onclick="myFunction4()" class="dropbtn link">Коллекции</button>
+                            <div id="myDropdown4" class="dropdown-content">
+                                <a href="#">Дэмисезон</a>
+                                <a href="#">Лето</a>
+                                <a href="#">Зима</a>
+                            </div>
+                        </li>
+                    </div>
+                    <div class="dropdown link">
+                        <li>
+                            <button onclick="myFunction5()" class="dropbtn link ">Скидки</button>
+                            <div id="myDropdown5" class="dropdown-content">
+                                <a href="#">Для мужчин</a>
+                                <a href="#">Для женщин</a>
+                                <a href="#">Для детей</a>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Контент (grid-элемент + grid-контейнер) -->
+        <main class="main">
+
+            <!-- Контент (grid-элемент) -->
+            <section class="content">
+                <form name="anketa" enctype="text/plain" method="post" class="tabl">
+                    <table border="4" cellspacing="0" cellpadding="2" bordercolorIight="#FF8080"
+                        bordercolordark="#FFOOOO" class="buy_form">
+                        <tr>
+                            <td class="">Фамилия</td>
+                            <td><input type="Text" class="text field" size="40" name="l" maxlength="12" id="a"
+                                    color="white" required></td>
+                        </tr>
+                        <tr>
+                            <td>Имя </td>
+                            <td><input type="Text " class="text field" size="40" name="2" id="a" required></td>
+                        </tr>
+                        <tr>
+                            <td>Отчество</td>
+                            <td><input type="Text" class="text field" size="40" name="2" id="a" required></td>
+                        </tr>
+                        <tr>
+                            <td> Коментарии </td>
+                            <td><textarea class="text" name="1" id="1" cols="40" rows="6"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Номер телефона</td>
+                            <td>
+                                <div class="input-wrapper"><input class="mask text field"
+                                        placeholder="+7 (___) ___-__-__" type="tel" value="+7 (___) ___-__-__" required>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Почта</td>
+                            <td><input type="email" class="text" size="40" name="2" id="a" required></td>
+                        </tr>
+                        <tr>
+                            <td>Укажите желаемую <br> дату доставки </td>
+                            <td><input type="datetime" class="text" size="40" name="2" id="a" required></td>
+                        </tr>
+                        <tr>
+                            <td>Первый класс посылки </td>
+                            <td><input type="radio" class="text" size="40" name="2" id="a"></td>
+                        </tr>
+                        <tr>
+                            <td>Второй класс посылки </td>
+                            <td><input type="radio" class="text" size="40" name="2" id="a"></td>
+                        </tr>
+                        <tr>
+
+
+                        </tr>
+                        <tr>
+                            <td> Адресс доставки <br> </td>
+                            <td><textarea class="text" rows="4" cols="40" name="6" id="a"
+                                    placeholder="Введите адресс доставки" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Выберите позиции <br> который вы хотите <br> заказать </td>
+                            <td>
+                                <ul>
+                                    <li><label class="product"><input type="Checkbox" name="7" class="color"> Товар
+                                        </label></li>
+                                    <li><label class="product"><br><input type="Checkbox" name="8">Товар 2</label></li>
+                                    <li><label class="product"><br><input type="Checkbox" name="9">Товар 3</label></li>
+                                    <li><label class="product"><br><input type="Checkbox" name="10">Товар 4</label></li>
+                                    <li><label class="product"><br><input type="Checkbox" name="11">Товар 5</label></li>
+                                    <li><label class="product"><br><input type="Checkbox" name="12"> Товар 6</label>
+                                    </li>
+                                </ul>
+
+
+
+
+                                <br>
+
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="Reset" value="очистить" class="products__button_buy"></td>
+                            <td><input type="Submit" value="отправитьформу" class="products__button_buy " id="submit">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+
+
+        </main>
+        <footer class="footer">
+            <div class="footer__copy">2022</div>
+            <div class="footer__text">Dmitry Goldobin</div>
+        </footer>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/number_mask.js"></script>
+</body>
+
+</html>
